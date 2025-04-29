@@ -1,7 +1,19 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; 
+import { Menu, X } from "lucide-react";
+import { useNavigate } from "react-router-dom"; 
 
 const Navbar = () => {
+  
+  const navigate = useNavigate();
+
+  const GotoHome = () => {
+    navigate('/')
+  }
+
+  const GotoAbout = () => {
+    navigate('/about')
+  }
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -14,12 +26,24 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-4">
-          <button className="text-[#2f3c7e] font-medium text-[18px] underline underline-offset-8 decoration-[#2f3c7e] pr-6 cursor-pointer">Home</button>
-          <button className="text-[#2f3c7e] font-medium text-[18px] hover:underline underline-offset-8 decoration-[#2f3c7e] pr-6 cursor-pointer">Profile</button>
-          <button className="text-[#2f3c7e] font-medium text-[18px] hover:underline underline-offset-8 decoration-[#2f3c7e] pr-6 cursor-pointer">About</button>
-          <button className="text-[#2f3c7e] font-medium text-[18px] hover:underline underline-offset-8 decoration-[#2f3c7e] pr-6 cursor-pointer">Contact</button>
-          <button className="text-[#2f3c7e] font-medium text-[18px] hover:underline underline-offset-8 decoration-[#2f3c7e] pr-6 cursor-pointer">Setting</button>
-          <button className="text-[#2f3c7e] font-medium text-[18px] hover:underline underline-offset-8 decoration-[#2f3c7e] pr-6 cursor-pointer">Login</button>
+          <button 
+          onClick={GotoHome}
+          className="text-[#2f3c7e] font-medium text-[18px] hover:underline underline-offset-8 decoration-[#2f3c7e] pr-6 cursor-pointer">Home</button>
+          <button
+
+           className="text-[#2f3c7e] font-medium text-[18px] hover:underline underline-offset-8 decoration-[#2f3c7e] pr-6 cursor-pointer">Profile</button>
+          <button
+           onClick={GotoAbout}
+           className="text-[#2f3c7e] font-medium text-[18px] hover:underline underline-offset-8 decoration-[#2f3c7e] pr-6 cursor-pointer">About</button>
+          <button
+          
+          className="text-[#2f3c7e] font-medium text-[18px] hover:underline underline-offset-8 decoration-[#2f3c7e] pr-6 cursor-pointer">Contact</button>
+          <button
+          
+          className="text-[#2f3c7e] font-medium text-[18px] hover:underline underline-offset-8 decoration-[#2f3c7e] pr-6 cursor-pointer">Setting</button>
+          <button
+          
+          className="text-[#2f3c7e] font-medium text-[18px] hover:underline underline-offset-8 decoration-[#2f3c7e] pr-6 cursor-pointer">Login</button>
         </div>
 
         {/* Mobile Menu Button */}
