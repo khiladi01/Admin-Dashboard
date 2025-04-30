@@ -11,11 +11,7 @@ import Cart from "./page/Cart"
 
 function App() {
 
-  const [cartCount , setCartCount] = useState(0);
-
-  if(setCartCount < 1){
-     setCartCount("")
-  }
+  const [cartCount , setCartCount] = useState('');
 
   return (
     <>
