@@ -27,7 +27,7 @@ const Sliderimage = () => {
       <Slider {...settings} >
         {images.map((img, index) => (
           <div key={index} >
-            <img src={img} alt={`slide-${index}`} className="w-full h-[400px] object-cover shadow" />
+            <img src={img} alt={`slide-${index}`} className="w-full h-[400px] object-cover shadow rounded-md" />
           </div>
         ))}
       </Slider>
