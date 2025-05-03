@@ -1,12 +1,13 @@
-import { Route , Router , Routes } from "react-router-dom"
+// import { Route , Router , Routes } from "react-router-dom"
+import { BrowserRouter as  Route, Routes } from "react-router-dom";
 import { useState } from "react"
 import Navbar from "./components/Navbar"
 import Home from "./page/Home"
-import Profile from "./page/About"
+import Profile from "./page/Profile"
 import About from "./page/About"
-import Contact from "./page/About"
-import Setting from "./page/About"
-import Login from "./page/About"
+import Contact from "./page/Contact"
+import Setting from "./page/Setting"
+import Login from "./page/Login"
 import Cart from "./page/Cart"
 import Footer from "./components/Footer"
 

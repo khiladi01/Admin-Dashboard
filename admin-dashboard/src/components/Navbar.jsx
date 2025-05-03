@@ -120,7 +120,7 @@ const Navbar = ( {cartCount} ) => {
     </div>
 
         <div className="h-[40px] w-full bg-red-300  grid place-content-center">
-          <p className="text-white text-md font-medium">Sale Is Live 50% Off Now Go And Shop Now</p>
+          <p className="text-white text-md font-medium">Sale Is Live 50% Off Go And Shop Now</p>
         </div>
 </>
   );
