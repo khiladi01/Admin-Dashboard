@@ -28,6 +28,7 @@ import Reviewnine from '../assets/reviewimg/reviewnine.webp'
 import Sliderimage from '../components/Slider'
 
 const Home = ( {setCartCount} ) => {
+
   const [inputFocused, setInputFocused] = useState(false);
   const [email, setEmail] = useState('');
   const [animateStars, setAnimateStars] = useState(false);
@@ -104,13 +105,15 @@ const Home = ( {setCartCount} ) => {
     }
   };
 
+
+
   return (
     <>
 
         <div className="h-auto w-full bg-[#fbeaeb] select-none hide-scrollbar">
 
             {/* Adding Heading section */}
-         <div className="h-screen w-full bg-center bg-cover flex justify-center items-center pr-[1000px]" style={{ backgroundImage: `url(${screenbgimage})` }}>
+         <div className="h-screen  bg-center bg-cover flex justify-center items-center pr-[1000px] " style={{ backgroundImage: `url(${screenbgimage})` }}>
 <header className="w-[300px] text-8xl text-white uppercase font-sans">
                 explore the special collection!
             </header>
@@ -685,7 +688,7 @@ const Home = ( {setCartCount} ) => {
           <img src={Reviewnine} alt="image" className='h-[300px] w-[350px] rounded-md' />
           <div className='mt-[10px] ml-[10px]'>
             <p className='text-lg font-bold text-[#2f3c7e]'>Khusi Kumari</p>
-            <p className='text-sm font-light text-[#2f3c7e]'>Gold Member</p>
+            <p className='text-sm font-light text-[#2f3c7e] '>Gold Member</p>
 
             {/* Adding Solidstar Icon For Rating */}
             <div className="flex text-yellow-400 text-md space-x-1">
@@ -702,11 +705,6 @@ const Home = ( {setCartCount} ) => {
 
         </div>
         {/* Closing div of testimonial section */}
-
-        {/* Adding Footer Part */}
-         <div className='h-screen w-full'>
-         
-         </div>
 
         </div>
         {/* Main Closing Div */}

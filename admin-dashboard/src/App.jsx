@@ -8,6 +8,7 @@ import Contact from "./page/About"
 import Setting from "./page/About"
 import Login from "./page/About"
 import Cart from "./page/Cart"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -53,6 +54,7 @@ function App() {
           />
         </Routes>
         
+        <Footer />
     </>
   )
 }
