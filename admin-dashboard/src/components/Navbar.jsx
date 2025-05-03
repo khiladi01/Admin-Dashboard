@@ -40,10 +40,11 @@ const Navbar = ( {cartCount} ) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
+    <>
     <div className="h-[100px] w-full sticky top-0 z-50 select-none bg-[#fbeaeb]">
       <div className="h-[100px] w-full shadow-sm px-4 md:px-10 shadow-[#e3767d]">
         {/* Searching Bar */}
-        <div className="h-[40px] w-full">
+        <div className="h-[40px] w-full pt-[10px]">
           <span>
             <input 
               type="text"
@@ -117,6 +118,11 @@ const Navbar = ( {cartCount} ) => {
         </div>
       )}
     </div>
+
+        <div className="h-[40px] w-full bg-red-300  grid place-content-center">
+          <p className="text-white text-md font-medium">Sale Is Live 50% Off Now Go And Shop Now</p>
+        </div>
+</>
   );
 };
 
