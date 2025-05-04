@@ -1,5 +1,4 @@
-// import { Route , Router , Routes } from "react-router-dom"
-import { BrowserRouter as  Route, Routes } from "react-router-dom";
+import { Route , Router , Routes } from "react-router-dom"
 import { useState } from "react"
 import Navbar from "./components/Navbar"
 import Home from "./page/Home"
@@ -14,6 +13,11 @@ import Footer from "./components/Footer"
 function App() {
 
   const [cartCount , setCartCount] = useState('');
+
+  const [firstname , setFirstName] = useState('');
+  const [lastname , setLastName] = useState('');
+  const [phone , setPhone] = useState('');
+  const [email , setEmail] = useState('');
 
   return (
     <>
@@ -36,7 +40,12 @@ function App() {
 
         <Route
           path="/contact"
-          element={ <Contact /> } 
+          element={ <Contact
+          firstname={firstname} setFirstName={setFirstName}
+          lastname={lastname} setLastName={setLastName}
+          phone={phone} setPhone={setPhone}
+          email={email} setEmail={setEmail}
+             /> } 
           />
 
         <Route
@@ -60,4 +69,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
