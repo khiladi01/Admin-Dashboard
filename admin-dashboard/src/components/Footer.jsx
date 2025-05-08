@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="w-full bg-slate-800 flex flex-col md:flex-row flex-wrap justify-center items-start gap-10 md:gap-20 px-6 py-12 select-none">
         
         <div className="w-full sm:w-[300px]">
-          <header className="text-3xl text-white">Dashora</header>
+          <header className="text-3xl text-white">Velomart</header>
           <p className="pt-2 text-md text-white">
             Top brand cloth & accessories are available here <br />
             Delivered Fast
@@ -17,11 +17,11 @@ const Footer = () => {
         <div className="w-full sm:w-[200px]">
           <header className="text-2xl text-white">Quick Links</header>
           <div className="pt-4 space-y-2">
+          <Link to="/" className="block text-white hover:text-red-300 text-md">
+              Shop
+            </Link>
             <Link to="/about" className="block text-white hover:text-red-300 text-md">
               About Us
-            </Link>
-            <Link to="/" className="block text-white hover:text-red-300 text-md">
-              Shop
             </Link>
             <Link to="/contact" className="block text-white hover:text-red-300 text-md">
               Contact Us
@@ -58,9 +58,16 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
+      {/* Owner Section */}
+      <div className="h-[50px] w-full bg-slate-800 grid place-content-center select-none">
+        <p className="text-rose-300 text-md font-medium">
+          Created & Design By Raushan Raj
+        </p>
+      </div>
+      {/* Licence Section */}
       <div className="h-[50px] w-full bg-slate-800 grid place-content-center select-none">
         <p className="text-white text-md font-medium">
-          © {new Date().getFullYear()} akki Store. All rights reserved.
+          © {new Date().getFullYear()} rosu Store. All rights reserved.
         </p>
       </div>
     </>

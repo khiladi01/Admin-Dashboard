@@ -64,7 +64,7 @@ const Navbar = ( {cartCount} ) => {
         </div>
         {/* Logo */}
         <div className="h-[30px] text-3xl w-full flex justify-center items-center font-sans font-medium text-[#2f3c7e]">
-          Dashora
+          <p>Velomart</p>
         </div>
 
         {/* Desktop Menu */}
