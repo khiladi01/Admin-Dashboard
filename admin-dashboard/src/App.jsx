@@ -19,6 +19,9 @@ function App() {
   const [phone , setPhone] = useState('');
   const [email , setEmail] = useState('');
 
+  const [username , setUsername] = useState('');
+  const [userpassword , setUserpassword] = useState('');
+
   return (
     <>
       <Navbar cartCount={cartCount} />
@@ -55,7 +58,10 @@ function App() {
 
         <Route
           path="/login"
-          element={ <Login /> } 
+          element={ <Login 
+          username={username} setUsername={setUsername}
+          useremail={userpassword} setUseremail={setUserpassword}
+            /> } 
           />
 
         <Route

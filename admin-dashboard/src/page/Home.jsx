@@ -95,12 +95,16 @@ const Home = ( {setCartCount} ) => {
         <div className="h-auto w-full bg-[#fbeaeb] select-none hide-scrollbar overflow-y-scroll">
 
             {/* Adding Heading section */}
-            <div className="h-screen bg-center bg-cover flex justify-start items-center px-4 md:px-20 lg:px-60" style={{ backgroundImage: `url(${screenbgimage})` }}
-            >
-            <header className="text-left text-4xl md:text-6xl lg:text-8xl text-white uppercase font-sans max-w-[300px]">
-            explore the special collection!
-            </header>
-        </div>
+           <div className="relative h-screen bg-center bg-cover flex justify-start items-center px-4 md:px-20 lg:px-60" style={{ backgroundImage: `url(${screenbgimage})` }}>
+          {/* Dark overlay to reduce brightness */}
+          <div className="absolute inset-0 bg-black/30"></div>
+
+          {/* Content */}
+          <header className="relative text-left text-4xl md:text-6xl lg:text-8xl text-white uppercase font-sans max-w-[300px] z-10">
+          explore the special collection!
+         </header>
+         </div>
+
 
 
 

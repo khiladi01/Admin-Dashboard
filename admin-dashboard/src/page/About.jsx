@@ -1,3 +1,5 @@
+
+import { useState, useEffect } from 'react';
 import Aboutbg from '../assets/aboutimg/aboutbgimage.jpg'
 import AboutBIone from '../assets/aboutimg/aboutbione.jpg'
 import AboutBItwo from '../assets/aboutimg/aboutbitwo.jpg'
@@ -5,14 +7,20 @@ import AboutBIthree from '../assets/aboutimg/aboutbithree.jpg'
 import AboutSI from '../assets/aboutimg/aboutsimg.jpg'
 
 const About = () => {
+    const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+        setAnimate(true);
+    }, []);
+
     return (
         <>
             <div className="w-full bg-[#fbeaeb] select-none">
 
-                {/* Hero Section */}
+                {/* Hero Section */} 
                 <div className="w-full bg-white flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-40 py-10 px-4">
                     <div>
-                        <img src={Aboutbg} alt="image" className="h-[300px] w-[300px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px]" />
+                        <img src={Aboutbg} alt="image" className={`h-[300px] w-[300px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px] ${animate ? 'animate-slide-left-to-right' : ''}`} />
                     </div>
                     <div>
                         <p className="text-3xl md:text-5xl text-red-400 font-medium first-letter:text-5xl md:first-letter:text-9xl first-letter:text-slate-900">About Us</p>
@@ -39,7 +47,7 @@ const About = () => {
                                 <p className="text-slate-700 text-xl md:text-2xl font-medium text-center">{item.text}</p>
                             </div>
                             <div className="h-[300px] flex justify-center items-center">
-                                <img src={item.img} alt="image" className="h-[250px] w-[250px] md:h-[300px] md:w-[300px]" />
+                                <img src={item.img} alt="image" className={`h-[250px] w-[250px] md:h-[300px] md:w-[300px] ${animate ? 'animate-slide-left-to-right' : ''}`} />
                             </div>
                         </div>
                     ))}
@@ -48,7 +56,7 @@ const About = () => {
                 {/* Info Section */}
                 <div className="w-full flex flex-col lg:flex-row justify-center items-center bg-white select-none gap-10 lg:gap-20 py-10 px-4">
                     <div>
-                        <img src={AboutSI} alt="image" className="h-[300px] w-[320px] md:h-[400px] md:w-[450px] lg:h-[500px] lg:w-[550px]" />
+                        <img src={AboutSI} alt="image" className={`h-[300px] w-[320px] md:h-[400px] md:w-[450px] lg:h-[500px] lg:w-[550px] ${animate ? 'animate-slide-left-to-right' : ''}`} />
                     </div>
                     <div>
                         <p className="max-w-[600px] text-sm md:text-base text-slate-800 first-letter:text-2xl md:first-letter:text-3xl first-letter:text-red-400 first-letter:font-semibold">

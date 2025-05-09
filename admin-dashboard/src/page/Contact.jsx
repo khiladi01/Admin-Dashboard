@@ -34,10 +34,10 @@ const Contact = ({
 
   return (
     <>
-      <div className="min-h-screen w-full bg-white flex flex-col lg:flex-row justify-center items-center gap-10 p-5">
+      <div className="min-h-screen w-full bg-white flex flex-col lg:flex-col justify-center items-center gap-10 p-5 select-none">
         {/* Contact Info Section */}
         <div className="w-full lg:w-1/2">
-          <p className="text-5xl text-red-400 font-medium first-letter:text-9xl first-letter:text-slate-800 first-letter:font-bold">
+          <p className="text-5xl text-red-400 font-medium first-letter:text-9xl first-letter:text-[#2f3c7e] first-letter:font-bold">
             Contact Us
           </p>
           <div className="mt-5 text-slate-700 text-lg font-medium">
@@ -58,7 +58,8 @@ const Contact = ({
         </div>
 
         {/* Contact Form Section */}
-        <div className="w-full lg:w-1/2 p-4 shadow shadow-red-100 rounded-sm">
+        <div className="w-full lg:w-1/2 p-4 shadow rounded-sm">
+        <div className="text-xl text-[#2f3c7e] font-medium text-center">Enquiry</div>
           <form onSubmit={handler}>
             <div>
               <label htmlFor="name" className="text-lg text-slate-700 font-normal">Name</label>
@@ -69,14 +70,14 @@ const Contact = ({
                 value={firstname}
                 onChange={(e) => setFirstName(e.target.value)}
                 placeholder="First Name"
-                className="h-[40px] w-full outline-0 shadow-sm pl-3"
+                className="h-[40px] w-full outline-0 shadow-sm pl-3 border-[1px] border-rose-200"
               />
               <input
                 type="text"
                 value={lastname}
                 onChange={(e) => setLastName(e.target.value)}
                 placeholder="Last Name"
-                className="h-[40px] w-full outline-0 shadow-sm pl-3"
+                className="h-[40px] w-full outline-0 shadow-sm pl-3 border-[1px] border-rose-200"
               />
             </div>
 
@@ -87,7 +88,7 @@ const Contact = ({
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 placeholder="888 888 8888"
-                className="h-[40px] w-full outline-0 shadow-sm pl-3 mt-1"
+                className="h-[40px] w-full outline-0 shadow-sm pl-3 mt-1 border-[1px] border-rose-200"
               />
             </div>
 
@@ -98,7 +99,7 @@ const Contact = ({
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="abc@gmail.com"
-                className="h-[40px] w-full outline-0 shadow-sm pl-3 mt-1"
+                className="h-[40px] w-full outline-0 shadow-sm pl-3 mt-1 border-[1px] border-rose-200"
               />
             </div>
 
@@ -108,7 +109,7 @@ const Contact = ({
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Type Your Message"
-                className="h-[70px] w-full outline-0 shadow-sm pl-3 mt-1"
+                className="h-[70px] w-full outline-0 shadow-sm pl-3 mt-1 border-[1px] border-rose-200"
               />
             </div>
 
@@ -116,7 +117,7 @@ const Contact = ({
               <input
                 type="submit"
                 value="Submit"
-                className="h-[40px] w-[200px] outline-0 shadow-sm text-lg text-slate-50 font-normal hover:scale-105 bg-red-300 hover:shadow-red-200 hover:text-slate-100 rounded-full"
+                className="h-[40px] w-full outline-0 shadow-sm text-lg text-slate-50 font-normal hover:bg-red-400 delay-100 bg-red-300 hover:shadow-red-200 hover:text-slate-100 rounded-full cursor-pointer"
               />
             </div>
             <div className="mt-[10px] pl-1.5">
