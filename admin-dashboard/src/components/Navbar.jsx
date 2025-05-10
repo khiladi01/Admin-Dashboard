@@ -113,7 +113,7 @@ const Navbar = ( {cartCount} ) => {
           <button onClick={GotoProfile} className="font-medium text-[18px] py-2 text-left cursor-pointer text-[#2f3c7e] hover:text-[#717dbc]">Profile</button>
           <button onClick={GotoAbout} className="font-medium text-[18px] py-2 text-left cursor-pointer text-[#2f3c7e] hover:text-[#717dbc]">About</button>
           <button onClick={GotoContact} className="font-medium text-[18px] py-2 text-left cursor-pointer text-[#2f3c7e] hover:text-[#717dbc]">Contact</button>
-          <button onClick={GotoSetting} className="font-medium text-[18px] py-2 text-left cursor-pointer text-[#2f3c7e] hover:text-[#717dbc]">Setting</button>
+          {/* <button onClick={GotoSetting} className="font-medium text-[18px] py-2 text-left cursor-pointer text-[#2f3c7e] hover:text-[#717dbc]">Setting</button> */}
           <button onClick={GotoLogin} className="font-medium text-[18px] py-2 text-left cursor-pointer text-[#2f3c7e] hover:text-[#717dbc]">Login</button>
         </div>
       )}

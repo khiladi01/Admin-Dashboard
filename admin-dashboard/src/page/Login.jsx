@@ -87,7 +87,7 @@ const Login = ({ username, setUsername, userpassword, setUserpassword }) => {
                 ___________________ or ___________________
               </div>
               <div className="mt-[20px]">
-                <Link to="https://www.google.com">
+                <Link to="">
                   <img src={signing} alt="google" />
                 </Link>
               </div>

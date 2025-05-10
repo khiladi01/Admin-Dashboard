@@ -14,49 +14,49 @@ import ecomeight from '../assets/ecomimg/ecomeight.webp'
 const Product = [
     {
         img : ecomone,
-        name : "Men Black T-Shirt",
+        name : "Mens Black T-Shirt",
         brand: "Adidas",
-        price: "Rs 599"
+        price: "599"
     },
     {
         img : ecomtwo,
-        name : "Men Cyan T-Shirt",
+        name : "Mens Cyan T-Shirt",
         brand: "Adidas",
-        price: "Rs 656"
+        price: "656"
     },
     {
         img : ecomthree,
-        name : "Men Brown T-Shirt",
+        name : "Mens Brown T-Shirt",
         brand: "Adidas",
-        price: "Rs 780"
+        price: "780"
     },
     {
         img : ecomfour,
-        name : "Men Lines T-Shirt",
+        name : "Mens Lines T-Shirt",
         brand: "Adidas",
-        price: "Rs 650"
+        price: "650"
     },
     {
         img : ecomfive,
         name : "Wallet",
         brand: "Bellroy",
-        price: "Rs 889"
+        price: "889"
     },
     {
         img : ecomsix,
-        name : "Men Trimmer",
+        name : "Mens Trimmer",
         brand: "Philips",
-        price: "Rs 999"
+        price: "999"
     },
     {
         img : ecomseven,
-        name : "Men Sneaker",
+        name : "Mens Sneaker",
         brand: "Bacca Bucci",
-        price: "Rs 999"
+        price: "999"
     },
     {
         img : ecomeight,
-        name : "Men Perfume",
+        name : "Mens Perfume",
         brand: "EMBARK",
         price: "1200"
     },

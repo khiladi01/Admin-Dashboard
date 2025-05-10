@@ -12,7 +12,7 @@ import Footer from "./components/Footer"
 
 function App() {
 
-  const [cartCount , setCartCount] = useState('');
+  const [cartCount , setCartCount] = useState(0);
 
   const [firstname , setFirstName] = useState('');
   const [lastname , setLastName] = useState('');

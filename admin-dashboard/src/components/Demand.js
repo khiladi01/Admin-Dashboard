@@ -10,50 +10,50 @@ import ecomsixteen from '../assets/ecomimg/ecomsixteen.webp'
 const Demand = [
     {
         img : ecomeleven,
-        name : "Men Black T-Shirt",
-        brand: "Adidas",
-        price: "Rs 599"
+        name : "Perfume For Male  & Female",
+        brand: "BellaVita",
+        price: "599"
     },
     {
         img : ecomtwelve,
-        name : "Men Cyan T-Shirt",
+        name : "Mens White Shirt",
         brand: "Adidas",
-        price: "Rs 656"
+        price: "656"
     },
     {
         img : ecomfifteen,
-        name : "Men Brown T-Shirt",
-        brand: "Adidas",
-        price: "Rs 780"
+        name : "Ladies Purse",
+        brand: "Excotic",
+        price: "1499"
     },
     {
         img : ecomsixteen,
-        name : "Men Lines T-Shirt",
-        brand: "Adidas",
-        price: "Rs 650"
+        name : "Kurti For Girls",
+        brand: "Anushka Showroom",
+        price: "880"
     },
     {
         img : ecomseven,
-        name : "Wallet",
-        brand: "Bellroy",
-        price: "Rs 889"
+        name : "Mens Sneaker",
+        brand: "Bacca Bucci",
+        price: "1400"
     },
     {
         img : ecomsix,
-        name : "Men Trimmer",
+        name : "Mens Trimmer",
         brand: "Philips",
-        price: "Rs 999"
+        price: "999"
     },
     {
         img : ecomfive,
-        name : "Men Sneaker",
-        brand: "Bacca Bucci",
-        price: "Rs 999"
+        name : "Mens Wallet",
+        brand: "Bosca",
+        price: "2500"
     },
     {
         img : ecomfour,
-        name : "Men Perfume",
-        brand: "EMBARK",
+        name : "Men Lines T-Shirt",
+        brand: "Luxury",
         price: "1200"
     },
 ]

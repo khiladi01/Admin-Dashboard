@@ -18,6 +18,10 @@ const Home = ( {setCartCount} ) => {
 
   const hanlderCount = () => {
     setCartCount((prev) => prev + 1);
+
+    if(setCartCount == 0){
+      setCartCount
+    }
   };
 
   useEffect(() => {
@@ -135,7 +139,7 @@ const Home = ( {setCartCount} ) => {
               <FontAwesomeIcon key={i} icon={solidStar} />
             ))}
           </div>
-          <p className='font-bold'> {item.price} </p>
+          <p className='font-bold'>Rs {item.price} </p>
         </div>
         <div className='mt-3 flex justify-between'>
           <button className='h-[30px] w-[120px] outline-0 shadow rounded-full font-medium bg-white text-red-400 text-sm transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:bg-pink-100'>
@@ -177,7 +181,7 @@ const Home = ( {setCartCount} ) => {
             ))}
           </div>
           
-          <p className='font-bold'> {Item.price} </p>
+          <p className='font-bold'>Rs {Item.price} </p>
         </div>
         <div className='mt-3 flex justify-between'>
           <button className='h-[30px] w-[120px] outline-0 shadow rounded-full font-medium bg-white text-red-400 text-sm transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:bg-pink-100'>
@@ -239,7 +243,7 @@ const Home = ( {setCartCount} ) => {
 
         {/* Adding Testimonial Section */}
         <div className='h-[100px] w-full bg-white grid place-content-center'>
-        <header className='text-[#2f3c7e] text-3xl font-medium'>Our Testimonials</header>
+        <header className='text-[#2f3c7e] text-3xl font-medium'>Testimonials</header>
         </div>
 
         <div className='min-h-screen w-full bg-white py-10'>
