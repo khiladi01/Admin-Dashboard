@@ -23,7 +23,7 @@ const About = () => {
                         <img src={Aboutbg} alt="image" className={`h-[300px] w-[300px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px] ${animate ? 'animate-slide-left-to-right' : ''}`} />
                     </div>
                     <div>
-                        <p className="text-3xl md:text-5xl text-red-400 font-medium first-letter:text-5xl md:first-letter:text-9xl first-letter:text-slate-900">About Us</p>
+                        <p className="text-3xl md:text-5xl text-red-400 font-medium first-letter:text-5xl md:first-letter:text-9xl first-letter:text-[#2f3c7e]">About Us</p>
                         <p className="pt-4 w-full max-w-[500px] text-sm md:text-base">
                             At Velomart, we bring you premium clothing and accessories from the world’s top brands—curated for style, comfort, and confidence. Our mission is simple: make luxury fashion accessible, authentic, and effortless. Join our journey, where every piece tells a story and every order delivers more than just fashion—it delivers flair.
                         </p>

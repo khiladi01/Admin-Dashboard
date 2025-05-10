@@ -5,7 +5,7 @@ import Home from "./page/Home"
 import Profile from "./page/Profile"
 import About from "./page/About"
 import Contact from "./page/Contact"
-import Setting from "./page/Setting"
+// import Setting from "./page/Setting"
 import Login from "./page/Login"
 import Cart from "./page/Cart"
 import Footer from "./components/Footer"
@@ -51,10 +51,10 @@ function App() {
              /> } 
           />
 
-        <Route
+        {/* <Route
           path="/setting"
           element={ <Setting /> } 
-          />
+          /> */}
 
         <Route
           path="/login"
