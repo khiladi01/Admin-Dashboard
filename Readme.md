@@ -42,5 +42,5 @@ This project is fully responsive and works on:
 
 1. **Clone the repo**
 ```bash
-git clone https://github.com/your-username/ecommerce-clone.git
-cd ecommerce-clone
+git clone https://github.com/khiladi01/admin-dashboard-clone.git
+cd admin-dashboard-clone
