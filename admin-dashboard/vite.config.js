@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/admin-dashboard',
+  base: '/https://github.com/khiladi01/Admin-Dashboard',
   plugins: [
     react(),
     tailwindcss(),
